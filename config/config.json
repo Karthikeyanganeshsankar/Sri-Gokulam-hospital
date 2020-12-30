@@ -1,0 +1,10 @@
+{
+    "port": "8000",
+    "mongodb": {
+        "host": "localhost",
+        "port": "27017",
+        "database": "gokulamhospital",
+        "username": "gok@2020@hos",
+        "password": "gok@2020@hos"
+    }
+}
