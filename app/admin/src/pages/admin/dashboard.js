@@ -115,7 +115,7 @@ const Index = () => {
             </div>
             <div className="flex flex-col lg:flex-row w-full lg:space-x-2 space-y-2 lg:space-y-0 mb-2 lg:mb-4">
                 {/*widget*/}
-                <div className="w-full lg:w-1/4" style={{ cursor: 'pointer' }} onClick={e => { e.preventDefault(); router.push('/admin-manage-resume') }}>
+                <div className="w-full lg:w-1/4" style={{ cursor: 'pointer' }} onClick={e => { e.preventDefault(); router.push('/admin/manage-resume') }}>
                     <Widget1
                         title="Total Jobs"
                         description={total_applied_jobs}
@@ -125,7 +125,7 @@ const Index = () => {
                     />
                 </div>
                 {/*widget*/}
-                <div className="w-full lg:w-1/4" style={{ cursor: 'pointer' }} onClick={e => { e.preventDefault(); router.push('/admin-appointment') }} >
+                <div className="w-full lg:w-1/4" style={{ cursor: 'pointer' }} onClick={e => { e.preventDefault(); router.push('/admin/appointment') }} >
                     <Widget1
                         title="Total Appointments"
                         description={total_appointments}
@@ -135,7 +135,7 @@ const Index = () => {
                     />
                 </div>
                 {/*widget*/}
-                <div className="w-full lg:w-1/4" style={{ cursor: 'pointer' }} onClick={e => { e.preventDefault(); router.push('/admin-contactus') }}>
+                <div className="w-full lg:w-1/4" style={{ cursor: 'pointer' }} onClick={e => { e.preventDefault(); router.push('/admin/contactus') }}>
                     <Widget1
                         title="Total Messgaes"
                         description={total_contact_us}
