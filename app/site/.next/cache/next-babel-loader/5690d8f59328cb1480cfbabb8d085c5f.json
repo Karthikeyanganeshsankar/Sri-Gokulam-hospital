@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\nimport SectionTitle from '../components/section-title';\n\nconst Insurance = () => __jsx(React.Fragment, null, __jsx(SectionTitle, {\n  title: \"Add\",\n  subtitle: \"Insurance\"\n}), __jsx(\"div\", null, \"Insurance\"));\n\nexport default Insurance;","map":null,"metadata":{},"sourceType":"module"}

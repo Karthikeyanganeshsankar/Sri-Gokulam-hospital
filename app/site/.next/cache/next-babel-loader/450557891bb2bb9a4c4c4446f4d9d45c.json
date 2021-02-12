@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\n\nconst Centered = ({\n  children\n}) => __jsx(\"div\", {\n  \"data-layout\": \"centered\",\n  className: \"w-full h-screen flex items-center justify-center bg-grey-50\"\n}, children);\n\nexport default Centered;","map":null,"metadata":{},"sourceType":"module"}
