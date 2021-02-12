@@ -86,8 +86,9 @@ mongoose.connection.on("connected", () => {
     app.locals.pretty = true;
 
     // app.use('/portal', express.static(path.join(__dirname, '/public/portal'), { maxAge: 7 * 86400000 }));
-    app.set("public", "./public");
-    app.use("/", express.static(path.join(__dirname, "public")));
+    // app.set("public", "./public");
+    app.use("/", express.static(path.join(__dirname, "build/site/")));
+    app.use("/admin", express.static(path.join(__dirname, "build")));
 
     app.use((req, res, next) => {
         // console.log("====", req.originalUrl);

@@ -6,16 +6,12 @@ module.exports = (app, passport, io) => {
         const administrators = require("./administrators")(app, io);
         const user = require("./site")(app, io);
 
-        app.get("/", function (req, res) {
-            res.sendFile(path.join(__dirname, "../public/index.html"));
-        });
-
         app.get("/admin/*", function (req, res) {
-            res.sendFile(path.join(__dirname, "../public/admin/index.html"));
+            res.sendFile(path.join(__dirname, "../build/index.html"));
         });
 
         app.get("/*", function (req, res) {
-            res.sendFile(path.join(__dirname, "../public/index.html"));
+            res.sendFile(path.join(__dirname, "../build/site/index.html"));
         });
     } catch (e) {
         console.log("Error in Router", e);

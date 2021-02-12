@@ -3,8 +3,6 @@ import Validation from '../forms/validation'
 import Alert from '../alerts'
 import Axios from 'axios'
 
-import { login } from '../../../actions/LoginAction'
-
 const ContactUs = ({message = null}) => {
   const [data, onSubmit] = useState(null)
 
